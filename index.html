@@ -27,12 +27,18 @@
     line-height:27px;
     background-color: #f3f5f9;
   }
-  li:hover{
-    cursor:pointer;
-  }
-#navbar li{
+  #navbar li{
   color:black;
 }
+  li:hover{
+    cursor:pointer;
+    border:2px solid transparent;
+    border-radius: 5px;
+    background-color: #7A74E3;
+    color:white;
+    padding: 2.7px 2.3px;
+  }
+
   #navbar img {
     height: 100px;
     width: auto;
@@ -245,12 +251,16 @@
       overflow: hidden;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       height: 200px;
+      /* margin-top: -30px; */
     }
 
     .map-container iframe {
       width: 100%;
       height: 100%;
       border: 0;
+    }
+    #location{
+      margin-top:-5px;
     }
 
     /* === COPYRIGHT === */
@@ -302,13 +312,13 @@
         <div id="college">Indian Institute Of Technology Indore</div></div>
       <div id="right">
         <ul>
-          <li><i class="fa-regular fa-house"></i> Home</li>
-          <li>Instruments</li>
-          <li>Booking</li>
-          <li>Outreach</li>
-          <li>SIC Team</li>
-          <li>Faculty</li>
-          <li><i class="fa-solid fa-user"></i>Contact</li>
+          <li class="heading"><i class="fa-regular fa-house"></i> Home</li>
+          <li class="heading">Instruments</li>
+          <li class="heading">Booking</li>
+          <li class="heading">Outreach</li>
+          <li class="heading">SIC Team</li>
+          <li class="heading">Faculty</li>
+          <li class="heading"><i class="fa-solid fa-user"></i>Contact</li>
         </ul>
       </div>
     </nav>
@@ -423,17 +433,7 @@
         </ul>
       </div>
 
-      <!-- Resources -->
-      <div>
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="#">Research Facilities</a></li>
-          <li><a href="#">Publications</a></li>
-          <li><a href="#">Workshops</a></li>
-          <li><a href="#">Events</a></li>
-        </ul>
-      </div>
-
+      
       <!-- Contact Info -->
       <div class="contact-info">
         <h3>Contact Info</h3>
@@ -456,7 +456,7 @@
 
       <!-- Map -->
       <div>
-        <h3>Location</h3>
+        <h3 id="location">Location</h3>
         <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.592692190366!2d75.9190039449008!3d22.521487893472603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962efca9295cb87%3A0x400d3f62307a32d1!2sSIC%20-%20A%20National%20Facility%20of%20IIT%20Indore%20(MP)!5e0!3m2!1sen!2sin!4v1761643673272!5m2!1sen!2sin"
